@@ -466,9 +466,9 @@ end
 
 function OrionLib:MakeWindow(WindowConfig)
 	local FirstTab = true
-	local Minimized = false
+	local Minimized = true
 	local Loaded = false
-	local UIHidden = false
+	local UIHidden = true
 
 	WindowConfig = WindowConfig or {}
 	WindowConfig.Name = WindowConfig.Name or "Orion Library"
@@ -651,9 +651,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Press Z to reopen the interface",
-			Time = 5
+			Name = "UI Hidden",
+			Content = "Press Z to open ui.",
+			Time = 2
 		})
 		WindowConfig.CloseCallback()
 	end)
@@ -661,6 +661,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(UserInputService.InputBegan, function(Input)
 		if Input.KeyCode == Enum.KeyCode.Z and UIHidden then
 			MainWindow.Visible = true
+			else
+			MainWindow.Visible = false
 		end
 	end)
 
