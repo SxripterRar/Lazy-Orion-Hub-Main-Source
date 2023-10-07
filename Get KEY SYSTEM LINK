@@ -1,0 +1,2 @@
+local copy = "https://rekonise.com/key-system-ouryy"
+setclipboard(tostring(copy))
