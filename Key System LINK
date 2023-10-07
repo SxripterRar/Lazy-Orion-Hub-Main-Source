@@ -1,0 +1,2 @@
+_G.Key = game:HttpGet('https://pastebin.com/raw/UbT1jVhX')
+local enteredKey = ""
