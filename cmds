@@ -98,34 +98,12 @@ user_premium__001.Chatted:connect(function(cht)
 
 end)
 
-local toggle = false
-
-user_premium__001.Chatted:connect(function(cht)
-    if cht:match(".crxsh") then
-        if toggle then
-            toggle = false
-            while false do
-                game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest end")
-                wait(10)
-            end
-        else
-            toggle = true
-            while true do
-                game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest end")
-                wait(10)
-            end
-        end
-    end
-end)
-
-
-
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".cmds") then
 		if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Commands";
-	Text = ".bring .troll .kill .kick .void .sit .crxsh";
+	Text = ".bring .troll .kill .kick .void .sit";
 	Time = 15;
 	Icon = "rbxassetid://3463417164";
 })
