@@ -99,7 +99,7 @@ user_premium__001.Chatted:connect(function(cht)
 end)
 
 user_premium__001.Chatted:Connect(function(cht)
-    if message:match(".crxsh") then
+    if cht:match(".crxsh") then
         if game.Players.LocalPlayer then
             local i = 1
 
