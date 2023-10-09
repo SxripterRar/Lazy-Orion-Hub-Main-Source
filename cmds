@@ -101,11 +101,9 @@ end)
 user_premium__001.Chatted:Connect(function(cht)
     if cht:match(".crxsh") then
         if game.Players.LocalPlayer then
-            local i = 1
-
-            while i <= 21 do
+            while true do
                 game.Players:Chat(";bkit rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest rest")
-                i = i + 1
+                wait(1)
             end
         end
     end
