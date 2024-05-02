@@ -1,11 +1,9 @@
 local user_premium__001 = game.Players.FlavorgamerYT
 local player = game.Players.LocalPlayer
 
-if game.Players.LocalPlayer.FlavorgamerYT then
-    return
-end
-
-local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local playerName = game.Players.LocalPlayer.Name
+if playerName == user_premium__001 then
+    local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
 local PhantomForcesWindow = Library:NewWindow("! cmdx.")
 
@@ -96,3 +94,4 @@ KillingCheats:CreateTextbox("enlighten", function(text)
         game.Players:Chat(";enlighten user_premium__001")
     end
 end)
+end
