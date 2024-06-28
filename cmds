@@ -3,6 +3,8 @@ local user_premium__001 = game.Players.FlavorgamerYT
 local user_premium__002 = game.Players.whoareyiu24
 local user_premium__003 = game.Players.LittleJonib
 local user_premium__004 = game.Players.xylar10e
+local user_premium__005 = game.Players.ridwanramadhan131
+local user_premium__006 = game.Players.whoareyiu23
 local player = game.Players.LocalPlayer
 
 --// Commands //--
